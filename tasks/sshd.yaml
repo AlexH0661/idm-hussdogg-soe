@@ -1,0 +1,9 @@
+---
+- name: Configure SSHD
+  ansible.builtin.template:
+    dest: "/etc/ssh/sshd_config"
+    src: sshd_config.j2
+    backup: yes
+    validate: "/usr/sbin/sshd -f %s -t"
+  notify:
+    - sshd_restart

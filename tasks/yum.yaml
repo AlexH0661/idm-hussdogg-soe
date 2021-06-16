@@ -1,0 +1,6 @@
+---
+- name: Install required packages
+  yum:
+    name: "{{ yum_packages }}"
+    state: latest
+  when: yum_packages is defined

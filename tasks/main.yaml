@@ -1,0 +1,6 @@
+---
+- name: Repos and Packages
+  ansible.builtin.import_tasks: yum.yaml
+
+- name: Configure SSHD
+  ansible.builtin.import_tasks: sshd.yaml
