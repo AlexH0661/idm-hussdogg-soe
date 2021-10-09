@@ -140,3 +140,6 @@ Subsystem       sftp    /usr/libexec/openssh/sftp-server
 # Allow Sallite to login as root
 Match Address 192.168.100.26
 	PermitRootLogin yes
+# Allow Ansible Tower to login as root
+Match Address 192.168.100.27
+	PermitRootLogin yes
