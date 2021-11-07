@@ -1,7 +1,7 @@
 galaxy_info:
-  role_name: duounix-deploy
+  role_name: idm-hussdogg-soe
   author: Alex H
-  description: Deploy Duo MFA to Unix machines
+  description: Configure SOE
 
   license: license (BSD)
 
@@ -15,6 +15,7 @@ galaxy_info:
     - 32
     - 33
     - 34
+    - 35
   - name: RHEL
     versions:
     - 7

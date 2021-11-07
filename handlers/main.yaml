@@ -1,4 +1,6 @@
 ---
 # Reboot the whole host, as it has joined the realm and the root user won't be able to login
 - name: sshd_restart
-  ansible.builtin.reboot:
+  ansible.builtin.service:
+    name: sshd
+    state: restarted
